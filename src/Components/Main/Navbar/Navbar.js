@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../../index.css";
 import { SearchOutlined, BellOutlined, DownOutlined } from "@ant-design/icons";
-import { Avatar, Badge, Dropdown, Typography } from "antd";
+import { Avatar, Badge, Dropdown, Input, Typography } from "antd";
 
 const Navbar = () => {
+  const [showSearch, setShowSearch] = useState(false);
+
   return (
     <div className="w-full max-w-full h-24 py-8 px-4 flex">
       <div className="flex w-3/4 justify-between px-2  items-center">
@@ -30,9 +32,24 @@ const Navbar = () => {
         </div>
 
         <div>
-          <span className="rounded-full bg-gray-200 p-3">
-            <SearchOutlined className="text-gray-400 mb-1 text-lg" />
-          </span>
+          {/* <SearchOutlined
+              className="text-gray-400 mb-1 text-lg "
+              onClick={() => {
+                setShowSearch(true);
+              }}
+            /> */}
+          {showSearch === true ? (
+            <Input placeholder="search keywords" />
+          ) : (
+            <span className="rounded-full bg-gray-200 p-3 cursor-pointer">
+              <SearchOutlined
+                className="text-gray-400 mb-1 text-lg "
+                onClick={() => {
+                  setShowSearch(true);
+                }}
+              />
+            </span>
+          )}
         </div>
       </div>
 

@@ -23,4 +23,5 @@ code {
 #root,
 #docs-root {
   --palette-color: #6c64e3;
+  /* --palette-color: "yellow"; */
 }

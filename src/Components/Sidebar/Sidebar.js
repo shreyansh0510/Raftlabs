@@ -21,30 +21,30 @@ const Sidebar = () => {
             <span className="text-4xl">
               <AppstoreOutlined className="text-[var(--palette-color)]" />
             </span>
-            <span class="text-2xl font-semibold">Omoi</span>
+            <span className="text-2xl font-semibold">Omoi</span>
           </div>
 
           <div>
             <ul>
-              <li className="mb-3 text-base font-light text-white  bg-[var(--palette-color)] rounded-lg py-1 pl-2">
+              <li className="mb-3 text-base font-light cursor-pointer text-white  bg-[var(--palette-color)] rounded-lg py-1 pl-2">
                 <HomeOutlined />
-                <span className="ml-3">Home</span>
+                <span className="ml-3 ">Home</span>
               </li>
-              <li className="mb-3 text-base font-light text-gray-700">
+              <li className="mb-3 text-base font-light cursor-pointer text-gray-700">
                 <BarChartOutlined />
-                <span className="ml-3">Analytic</span>
+                <span className="ml-3 ">Analytic</span>
               </li>
-              <li className="mb-3 text-base font-light text-gray-700">
+              <li className="mb-3 text-base font-light cursor-pointer text-gray-700">
                 <SearchOutlined />
-                <span className="ml-3">Explore</span>
+                <span className="ml-3 ">Explore</span>
               </li>
-              <li className="mb-3 text-base font-light text-gray-700">
+              <li className="mb-3 text-base font-light cursor-pointer text-gray-700">
                 <ShopOutlined />
-                <span className="ml-3">Shop</span>
+                <span className="ml-3 ">Shop</span>
               </li>
-              <li className="mb-3 text-base font-light text-gray-700">
+              <li className="mb-3 text-base font-light cursor-pointer text-gray-700">
                 <InboxOutlined />
-                <span className="ml-3">Inbox</span>
+                <span className="ml-3 ">Inbox</span>
               </li>
             </ul>
           </div>
@@ -52,13 +52,13 @@ const Sidebar = () => {
           <div>
             <span className="text-sm text-gray-400">Tools</span>
             <ul className="ml-2 mt-3">
-              <li className="mb-3 text-base font-light text-gray-700 ">
+              <li className="mb-3 text-base font-light text-gray-700 cursor-pointer ">
                 <span>
                   <SettingOutlined />
                 </span>
                 <span className="ml-3">Settings</span>
               </li>
-              <li className="mb-3 text-base font-light text-gray-700 ">
+              <li className="mb-3 text-base font-light text-gray-700 cursor-pointer ">
                 <span>
                   <QuestionCircleOutlined />
                 </span>
@@ -70,13 +70,13 @@ const Sidebar = () => {
           <div>
             <span className="text-sm text-gray-400">Projects</span>
             <ul className="ml-2 mt-3">
-              <li className="mb-3 text-base font-light text-gray-700 ">
+              <li className="mb-3 cursor-pointer text-base font-light text-gray-700 ">
                 <span>
                   <FolderOutlined />
                 </span>
                 <span className="ml-3">Amazon</span>
               </li>
-              <li className="mb-3 text-base font-light text-gray-700 flex">
+              <li className="mb-3 cursor-pointer text-base font-light text-gray-700 flex">
                 <span>
                   <FolderOutlined />
                 </span>
